@@ -1,0 +1,96 @@
+/* navigation bar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+.navbar {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(128, 116, 116, 0.5); 
+    backdrop-filter: blur(10px);
+    padding: 0 20px;
+    height: 60px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(245, 241, 241, 0.2);
+}
+
+.content {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+/* body part */
+#t1{
+    text-align: center;
+   font-family: cursive;
+    padding-top: 70px;
+    margin-left: 50px;
+    font-size: 35px;  
+}
+#t2{
+    text-align: center; 
+    word-wrap: break-word;
+    padding-top: 50px;
+    margin-left: 50px;
+    hyphens: auto;
+    font-family: cursive;
+    font-size: 25px;
+}
+#bt1{
+    animation: rotateHue 2s alternate infinite;
+    text-align: center;
+    padding: 20px;
+    margin-left: 90vh;
+    color: white;
+    background-color: hsl(139, 169%, 0%);
+    border-radius: 25%;
+    
+}
+@keyframes rotateHue{
+    to{
+        filter: hue-rotate(2turn);
+    }
+}

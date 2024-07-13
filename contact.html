@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travels website</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        body {
+          background-image: url('home.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style> 
+    
+</head>
+<nav>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> 
+        </div>
+        <ul class="nav-links">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="bg-text">
+  <h1>Contact</h1>
+  <p>If you are looking for something but are not sure what it is, or if you have a specific question and want to chat with us, please fill out the contact form below.<br> We will get back to you as soon as possible and help you with your needs. Thank you for choosing us.</p>
+</div>
+<!-- form section -->
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" >
+  
+      <label for="Email">Email</label>
+      <input type="email" id="Email" name="lastname" required >
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="India">India</option>
+        <option value="Singapore">Singapore</option>
+      </select>
+  
+      <label for="subject">Question</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+
+
+
+
+
+
+
+<!-- footer -->
+<footer class="f">
+    <div class="fc">
+
+    <strong><h3>contact</h3></strong>
+  <strong> <label>Location:<address>write Your address here</address></label></strong>
+    <ul class="f1"  style="list-style-type: none;">
+       <strong><label for="f2">Phone no: <li><a href="tel://+61452582321" class="f2" style="color: yellow;">+00 0000000000</a></li></label></strong>
+      <strong><label for="f2">Email:<li><a href="mailto:sales@attravels.com.au" class="f2" style="color: yellow;">abcd@gamil.com</a></li></label></strong>
+      <p>© Copyright,Bavadharini Murugan</p>
+    </ul>
+</div>
+</footer>
+<script src="scripts.js"></script>
+
+</body>
+</html>
+
+
